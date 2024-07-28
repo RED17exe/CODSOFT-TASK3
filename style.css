@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(300deg, rgba(224,26,206,1) 17%, rgba(34,67,238,1) 99%);
+}
+.calculator{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.heading {
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    margin-bottom: 1.5rem;
+}
+.calculatorbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: 30rem;
+    padding: 0.5rem;
+    background-color: black;
+    border-radius: 1rem;
+    margin: auto;
+    margin-bottom: 2rem;
+
+}
+.display{
+    width: 95%;
+    margin: 2rem 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.calculatorbox .numberdisplay {
+    height: 3rem;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 2px rgb(9, 240, 151);
+    color: white;
+    background-color: #000;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+    overflow-x: auto; 
+    padding-right: 10px; 
+    white-space: nowrap; 
+}
+
+.numberdisplay::-webkit-scrollbar {
+    display: none;
+}
+
+
+.numberandoperator{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.numbersection{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin-right: 2rem;
+}
+.subsection{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 2rem;
+    
+}
+.operatorsection{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    font-size: 3rem;
+}
+.number{
+    background-color: rgba(8, 243, 173, 0.821);
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 8px;
+    margin: 0.5rem;
+    cursor: pointer;
+    
+}
+.operator{
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: rgb(248, 130, 11);
+    border-radius: 50%;
+    margin: 0.5rem 0;
+    text-align: center;
+    cursor: pointer;
+}
+.multiplication{
+    padding-top: 5px;
+}
